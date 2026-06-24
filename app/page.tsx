@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LicznikOdwiedzin from "./_components/LicznikOdwiedzin";
 
 const rozbiory = [
   { numer: "I",   rok: "1772", slug: "pierwszy" },
@@ -62,6 +63,9 @@ export default function Home() {
             </Link>
           ))}
         </div>
+
+        {/* Licznik odwiedzin */}
+        <LicznikOdwiedzin />
 
         {/* Link do mapy */}
         <Link
